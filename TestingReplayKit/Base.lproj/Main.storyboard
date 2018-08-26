@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestingReplayKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="9rd-tC-IA0">
+                                <rect key="frame" x="163" y="74" width="50" height="302"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9n-9Y-tgT">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.1625512123" blue="0.091635124959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBK-Cw-yjT">
+                                        <rect key="frame" x="0.0" y="63" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.1625512123" blue="0.091635124959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUf-iM-eh3">
+                                        <rect key="frame" x="0.0" y="126" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.1625512123" blue="0.091635124959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-p3-khT">
+                                        <rect key="frame" x="0.0" y="189" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.1625512123" blue="0.091635124959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwx-p5-8zF">
+                                        <rect key="frame" x="0.0" y="252" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.1625512123" blue="0.091635124959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dBK-Cw-yjT" firstAttribute="top" secondItem="9rd-tC-IA0" secondAttribute="top" constant="63" id="22c-3V-9KM"/>
+                                    <constraint firstItem="nUf-iM-eh3" firstAttribute="top" secondItem="9rd-tC-IA0" secondAttribute="top" constant="126" id="Z9W-Qs-PkN"/>
+                                    <constraint firstItem="Dwx-p5-8zF" firstAttribute="top" secondItem="9rd-tC-IA0" secondAttribute="top" constant="252" id="rXJ-Ej-aah"/>
+                                    <constraint firstItem="nUf-iM-eh3" firstAttribute="centerY" secondItem="9rd-tC-IA0" secondAttribute="centerY" id="zsV-ce-hXD"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9rd-tC-IA0" secondAttribute="bottom" constant="291" id="BoO-wM-Lv8"/>
+                            <constraint firstItem="9rd-tC-IA0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Idy-x0-OG7"/>
+                            <constraint firstItem="9rd-tC-IA0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="ZKa-pc-IVP"/>
+                            <constraint firstItem="9rd-tC-IA0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="163" id="yKN-jQ-Sfi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="flashView" destination="I9n-9Y-tgT" id="QKa-TS-sOw"/>
+                        <outlet property="flashView2" destination="dBK-Cw-yjT" id="xuL-uM-N1D"/>
+                        <outlet property="flashView3" destination="nUf-iM-eh3" id="t6q-Fa-e6g"/>
+                        <outlet property="flashView4" destination="Iu3-p3-khT" id="5li-vP-BbT"/>
+                        <outlet property="flashView5" destination="Dwx-p5-8zF" id="CkX-Kw-4nX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
